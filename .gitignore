@@ -1,0 +1,4 @@
+venv
+MNIST
+AWS_sagemaker
+.env

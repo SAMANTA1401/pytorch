@@ -1,0 +1,64 @@
+aws ec2 > elastic cloud computing
+     > create account
+     > create IAM user for data safty attach policy (permission in which segment you are going to use)
+     > you get lot of error due to permission and have to write the policy
+     > automatically create role
+     > create instance , key pair for connection , modify security group with port like 5000
+     > connect with cli within console, or ssh with key pair pem file using powershell
+     > with GitHub action runner , self hosted ci cd pipeline
+     > or aws codepipeline , codebuild  ( need builspec.yml and apspec.yml file ), codedeploy ( code deploy agent need to be installed) , cloud watch for log ,
+     > s3 bucket to store build file and deploy file
+
+
+     > create codebuild , codedeploy  connect with codepipeline , and create policy ( premisssion), create
+     role for ec2
+     
+
+
+
+
+    s3 > simple storage service (object storage)
+    download cli : https://awscli.amazonaws.com/AWSCLIV2.msi 
+    then go to powershell : PS C:\Users\lenovo> aws configure
+		AWS Access Key ID [****************OK6K]:
+
+   set env var in windows machine aws access key id , access secret  key , reagion 
+
+	> create s3 bucket with unique name
+        > to access s3 bucket attach policy (permission for read, write , update, delete) , modify ACL as per requirement
+        > to access from different origin (domain) write CORS policy 
+        > required boto3 , botcore library to access s3
+
+
+         import sagemaker
+	import boto3
+	
+	sm_boto3 = boto3.client("sagemaker")
+	sess = sagemaker.Session()
+	region = sess.boto_session.region_name
+	bucket = name
+
+	sk_preficx = "sagemaker/..."
+	trainpath = sess.upload_data(path="train-v-1.csv',bucket = bucket, key_prefix= sk_prefix)
+	test_path = same 
+	
+
+
+
+    sagemaker > https://www.youtube.com/watch?v=Le-A72NjaWs&t=2159s
+
+    download cli : https://awscli.amazonaws.com/AWSCLIV2.msi 
+    then go to powershell : PS C:\Users\lenovo> aws configure
+		AWS Access Key ID [****************OK6K]:
+
+  (give all the credential)
+
+
+
+
+    GitHub action > 
+     
+
+
+
+   workflow > data import from api , database , store directly to s3 then import for model training 

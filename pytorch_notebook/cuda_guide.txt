@@ -1,0 +1,13 @@
+https://www.nvidia.com/en-us/geforce/drivers/
+
+https://visualstudio.microsoft.com/vs/community/    # packages > c++ build tools 
+
+https://www.anaconda.com/download/success
+
+https://developer.nvidia.com/cuda-toolkit-archive
+
+https://docs.nvidia.com/deeplearning/cudnn/latest/installation/windows.html   # copy bin , lib, , include ,x64 , from cudnn to cuda computing in progrmme file
+
+https://developer.nvidia.com/cudnn-9-5-1-download-archive
+
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124 # for cuda 14.4.1
